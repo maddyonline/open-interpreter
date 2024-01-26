@@ -66,7 +66,7 @@ def validate_llm_settings(interpreter):
     # Auto-run is for fast, light useage -- no messages.
     # If offline, it's usually a bogus model name for LiteLLM since LM Studio doesn't require one.
     if not interpreter.auto_run and not interpreter.offline:
-        display_markdown_message(f"> Model set to `{interpreter.llm.model}`")
+        display_markdown_message(f">  (**fork**) Model set to `{interpreter.llm.model}`")
     return
 
 
@@ -81,7 +81,7 @@ def display_welcome_message_once():
             """
         ●
 
-        Welcome to **Open Interpreter**.
+        Welcome to **fork** of Open Interpreter.
         """
         )
         time.sleep(1.5)

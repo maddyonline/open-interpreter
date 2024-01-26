@@ -10,6 +10,10 @@ from .utils.convert_to_openai_messages import convert_to_openai_messages
 
 litellm.suppress_debug_info = True
 
+import os
+
+litellm.api_base = "https://oai.hconeai.com/v1"
+litellm.headers = {"Helicone-Auth": f"Bearer {os.getenv('HELICONE_API_KEY')}"}
 
 class Llm:
     """
