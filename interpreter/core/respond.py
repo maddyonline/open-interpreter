@@ -97,7 +97,7 @@ def respond(interpreter):
                     interpreter.llm.max_tokens = 4096
                     interpreter.llm.supports_functions = True
                     display_markdown_message(
-                        f"> Model set to `{interpreter.llm.model}`"
+                        f"> (**fork**) Model set to `{interpreter.llm.model}`"
                     )
                 else:
                     raise Exception(
